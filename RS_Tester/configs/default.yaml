@@ -1,0 +1,27 @@
+model_name: default
+save_path: /home/furh/nas_data/all_test_dataset/all_rs/model_saves
+dataset_path: /home/furh/nas_data/all_test_dataset/all_rs/
+test_dataset: ALL
+debug: false
+
+eval: true
+metrics:
+  VQA: {}
+  SC: {}
+  IC: {}
+  OC:
+    max_min_list: null
+  VG:
+    answer_type: pix
+    image_size:
+      - 800
+      - 800
+    iou_threshold_list:
+      - 0.5
+      - 0.75
+      - 0.95
+  Detect:
+    answer_type: pix
+    image_size:
+      - 800
+      - 800
