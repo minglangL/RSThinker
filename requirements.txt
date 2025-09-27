@@ -1,0 +1,7 @@
+torchvision>=0.23.0
+accelerate>=1.10.1
+gradio>=5.44.0
+pre-commit>=4.2.0
+av>=15.0.0
+spaces>=0.40.1
+transformers>=4.56.1
