@@ -10,7 +10,7 @@
 ## TODO
 - Geo-CoT380k, the first large-scale dataset of structured Geo-CoT rationales. 
 - RSThinker's GRPO training code and the Remote Sensing reward model.
-- RSTest, the evaluation dataset of Geo-CoT. 
+- RSTester, the evaluation dataset of Geo-CoT. 
 ---
 
 ## Quick Start
