@@ -1,5 +1,5 @@
 # RSThinker (Towards Faithful Reasoning in Remote Sensing: A Perceptually-Grounded GeoSpatial Chain-of-Thought for Vision-Language Models)
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]()
+[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2509.22221)
 [![hf_model](https://img.shields.io/badge/🤗-Model-blue.svg)](https://huggingface.co/minglanga/RSThinker)
 
 ---
@@ -76,6 +76,15 @@ Vision-Language Models (VLMs) in remote sensing often fail at complex analytical
 ## Citation
 
 ```bibtex
+@misc{liu2025faithfulreasoningremotesensing,
+      title={Towards Faithful Reasoning in Remote Sensing: A Perceptually-Grounded GeoSpatial Chain-of-Thought for Vision-Language Models}, 
+      author={Jiaqi Liu and Lang Sun and Ronghao Fu and Bo Yang},
+      year={2025},
+      eprint={2509.22221},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2509.22221}, 
+}
 ```
 
 ## Acknowledgement
