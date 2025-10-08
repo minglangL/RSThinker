@@ -12,7 +12,7 @@
 
  🖼️ 论文标题截图
 <p align="center">
-  <img width="100%" alt="image" src="https://github.com/user-attachments/assets/2c284793-bb39-4625-bad1-f12ff9dd7fec" />
+  <img width="100%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/title.png" />
 </p>
 
 
@@ -28,7 +28,7 @@
 - 提出了基于两阶段训练的遥感视觉语言推理模型RSThinker。实验结果表明，以SFT作为GRPO强化学习的前置阶段是获得高质量推理能力的关键。RSThinker在一系列典型遥感任务上均取得领先性能。
 
 <p align="center">
-  <img width="90%" alt="image" src="https://github.com/user-attachments/assets/9f084380-2ff8-4a69-935b-0c3fd9d644ad" /><br>
+  <img width="90%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/overview.png" /><br>
   图1：Geo-CoT的整体框架
 </p>
 
@@ -40,14 +40,14 @@ Geo-CoT框架通过两阶段对齐策略实现：第一阶段利用SFT构建模�
 
 <p align="center">
  表1：Geo-CoT380k覆盖的数据集<br>
- <img width="50%" alt="image" src="https://github.com/user-attachments/assets/0a1fabaf-6253-4f63-954e-8650f0350c73" /><br>
+ <img width="50%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/cot380k.png" /><br>
 </p>
 
 - GRPO训练。虽然SFT阶段成功地为模型注入了Geo-CoT的结构化模板，但其基于最大似然的逐词优化目标仍可能导致模型在局部层面生成“看似合理但事实不符”的推理链。为克服这一问题，我们在第二阶段引入GRPO强化学习，通过最终输出的结果质量来驱动策略更新。每个任务的奖励函数均由其标准评估指标直接定义，确保优化目标与实际任务性能严格一致。
 
 <p align="center">
  表2：GRPO训练中不同任务的奖励设计<br>
- <img width="50%" alt="image" src="https://github.com/user-attachments/assets/800b2e06-bac7-4b18-a7f8-89fdb5c8ab4f" /><br>
+ <img width="50%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/reward.png" /><br>
 </p>
 
 ---
@@ -57,25 +57,25 @@ Geo-CoT框架通过两阶段对齐策略实现：第一阶段利用SFT构建模�
 在细粒度感知任务中，Geo-CoT框架要求模型显式地将推理过程与视觉证据对应，使得RSThinker在视觉定位、目标检测与计数任务上均取得显著优势。其逐步的“规划–对齐–综合”结构有效降低了重复计数与漏检问题，显著提升了模型的空间精确性与稳定性。
 <p align="center">
  表3：RSThinker在视觉定位、目标检测与目标计数任务上的结果<br>
- <img width="90%"  alt="image" src="https://github.com/user-attachments/assets/4891b00c-4338-4506-a32b-902bd0938b0f" />
- <img width="50%"  alt="image" src="https://github.com/user-attachments/assets/cd4d2870-677b-4b7c-97ff-94097fac1daf" />
- <img width="42%" alt="image" src="https://github.com/user-attachments/assets/f0cf4328-654d-424c-9757-fe7dc9d7923f" /><br>
+ <img width="90%"  alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/vg.png" />
+ <img width="50%"  alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/oc.png" />
+ <img width="42%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/det.png" /><br>
 </p>
 
 在场景分类与图像描述任务中，RSThinker能够通过思维链推理聚合细粒度证据，从而在分类与描述任务中生成更具事实依据的判断与文本。这种基于证据的综合能力避免了传统模型依赖全局统计特征所导致的偏差，展现出更强的鲁棒性与可解释性。
 <p align="center">
   表4：RSThinker在图像描述任务上的结果<br>
- <img width="90%" alt="image" src="https://github.com/user-attachments/assets/93503e79-ac40-4b1c-ad57-7f21518dd16a" /><br>
+ <img width="90%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/ic.png" /><br>
 </p>
 在复杂地理空间推理任务（如VQA）中，RSThinker 能够在多步逻辑问题（如存在判断与数量比较）中稳定输出符合事实的答案，体现了 Geo-CoT 在促进多层次推理一致性方面的优势。
 <p align="center">
  表5：RSThinker在场景分类和视觉问答任务上的结果<br>
- <img width="90%" alt="image" src="https://github.com/user-attachments/assets/bb49c541-18c3-41f9-9208-48625c976570" /><br>
+ <img width="90%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/sc_vqa.png" /><br>
 </p>
 此外，我们进行了系统的消融实验以剖析各组件的独立贡献。
 <p align="center">
- 表4：消融实验结果<br>
- <img width="90%" alt="image" src="https://github.com/user-attachments/assets/cc7988d5-86e2-4d2e-936b-e1dc5f9d6ab4" /><br>
+ 表6：消融实验结果<br>
+ <img width="90%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/ablation.png" /><br>
 </p>
 结果显示，仅在不包含推理思维链的遥感数据集上直接微调（SFT w/o CoT）虽可提升性能，但引入结构化推理思维链（SFT w/ CoT）后模型表现显著跃升。进一步地，在此基础上结合 GRPO 强化优化后，模型在复杂推理任务中取得最佳性能，而若缺少 CoT 支撑结构（SFT w/o CoT + GRPO），强化学习无法有效收敛。这表明：SFT 阶段的认知结构学习与 GRPO 阶段的事实对齐优化具有互补与协同作用。整体而言，实验结果充分证明了Geo-CoT框架能够显著提升遥感视觉语言模型的推理可信度与可验证性。
 
@@ -85,21 +85,21 @@ Geo-CoT框架通过两阶段对齐策略实现：第一阶段利用SFT构建模�
 # 可视化展示
 
 <p align="center">
- <img width="90%" alt="image" src="https://github.com/user-attachments/assets/66a10703-be59-421f-b169-6b31a8bc9c4d" /><br>
+ <img width="90%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/example_1.png" /><br>
  图2：RSThinker的测试样例（目标计数任务）
 </p>
 
 <p align="center">
- <img width="90%" alt="image" src="https://github.com/user-attachments/assets/897a0c3e-32d2-4b85-9e10-1779bd0153ca" /><br>
+ <img width="90%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/example_2.png" /><br>
  图3：RSThinker的测试样例（目标检测任务）
 </p>
 
 <p align="center">
- <img width="90%" alt="image" src="https://github.com/user-attachments/assets/1f4b5a24-3aa0-4fd1-bf2e-e3e4980c6fbf" /><br>
+ <img width="90%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/example_3.png" /><br>
  图4：RSThinker的测试样例（视觉定位任务）
 </p>
 
 <p align="center">
- <img width="90%" alt="image" src="https://github.com/user-attachments/assets/30304296-899f-48b0-a5ab-a89b834a07db" /><br>
+ <img width="90%" alt="image" src="https://github.com/minglangL/RSThinker/blob/main/figs/figs_chinese/example_4.png" /><br>
  图5：RSThinker的测试样例（视觉定位任务）
 </p>
