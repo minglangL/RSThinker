@@ -8,7 +8,7 @@
 - 代码：https://github.com/minglangL/RSThinker
 - 模型：https://huggingface.co/minglanga/RSThinker
 - 日期：2025.09
-- 单位：吉林大学
+- 单位：吉林大学计算机科学与技术学院
 
  🖼️ 论文标题截图
 <p align="center">
