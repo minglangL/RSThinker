@@ -5,7 +5,8 @@
 ---
 
 ## 📢 Latest Updates
-- 🔥 **News**: `2025/09/27`: We released **RSThinker** checkpoint [huggingface](https://huggingface.co/minglanga/RSThinker). 
+- `2026/02/01`:  **RSThinker** has been accepted by ICLR 2026. 🔥🔥🔥
+- `2025/09/27`: We released **RSThinker** checkpoint [huggingface](https://huggingface.co/minglanga/RSThinker). 
 
 ## TODO
 - Geo-CoT380k, the first large-scale dataset of structured Geo-CoT rationales. 
