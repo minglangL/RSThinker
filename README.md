@@ -1,15 +1,18 @@
 # RSThinker (Towards Faithful Reasoning in Remote Sensing: A Perceptually-Grounded GeoSpatial Chain-of-Thought for Vision-Language Models)
-[![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2509.22221)
+
+[![paper](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg)](https://arxiv.org/abs/2509.22221)
 [![hf_model](https://img.shields.io/badge/🤗-Model-blue.svg)](https://huggingface.co/minglanga/RSThinker)
+[![hf_dataset](https://img.shields.io/badge/🤗-Dataset-yellow.svg)](https://huggingface.co/datasets/minglanga/GeoCoT380k)
+
 
 ---
 
 ## 📢 Latest Updates
+- `2026/05/26`: We released **Geo-CoT380k**, the first large-scale dataset of structured Geo-CoT rationales. [[Dataset]](https://huggingface.co/datasets/minglanga/GeoCoT380k) 
 - `2026/02/01`:  **RSThinker** has been accepted by ICLR 2026. 🔥🔥🔥
 - `2025/09/27`: We released **RSThinker** checkpoint [huggingface](https://huggingface.co/minglanga/RSThinker). 
 
 ## TODO
-- Geo-CoT380k, the first large-scale dataset of structured Geo-CoT rationales. 
 - RSThinker's GRPO training code and the Remote Sensing reward model.
 - RSTester, the evaluation dataset of Geo-CoT. 
 ---
